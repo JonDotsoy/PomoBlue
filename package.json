@@ -1,9 +1,12 @@
 {
   "name": "pomodorotime",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Pomodoro Timer",
   "main": "lib/PomodoroTime.js",
+  "bin": {
+    "pomodoro": "bin/cli.js"
+  },
   "scripts": {
     "test": "mocha --harmony-async-await"
   },
@@ -13,11 +16,17 @@
   "author": "Jonathan Delgado <hi@jon.soy>",
   "license": "MIT",
   "devDependencies": {
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.23.0",
     "expect.js": "^0.3.1",
     "mocha": "^3.2.0"
   },
   "dependencies": {
     "chalk": "^1.1.3",
-    "debug": "^2.6.0"
+    "debug": "^2.6.0",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "setimmutable": "^0.1.3"
   }
 }
