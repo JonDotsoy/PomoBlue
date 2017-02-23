@@ -1,0 +1,8 @@
+
+install:
+  - "npm install"
+  - "npm install -g mocha"
+
+script:
+  - "npm run test"
+
